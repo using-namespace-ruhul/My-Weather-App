@@ -89,7 +89,7 @@ body {
     justify-content: center;
     border: 1px solid #eee;
     border-radius: 15px;
-    padding: 70px;
+    padding: 10px;
     margin-right: 20px;
 }
 
@@ -101,7 +101,7 @@ body {
 }
 
 .future-forecast .today .temp {
-    font-size: 18px;
+    font-size: 14px;
     padding-top: 15px;
 }
 
@@ -121,7 +121,7 @@ body {
     transition: 0.5s;
 }
 
-.weather-forecast.weather-forecast-item.day {
+.weather-forecast .weather-forecast-item .day {
     padding: 5px 15px;
     background: #3c3c44;
     border-radius: 50px;
@@ -130,6 +130,7 @@ body {
 
 .weather-forecast .weather-forecast-item .temp {
     font-weight: 100;
+    font-size: 13px;
 }
 
 @media only screen and (max-width:730px) {
@@ -139,10 +140,10 @@ body {
     .future-forecast {
         justify-content: start;
         align-items: none;
-        overflow-y: scroll;
+        overflow-x: scroll;
     }
     .future-forecast .today .temp {
-        font-size: 23px;
+        font-size: 16px;
     }
     .date-container .time {
         font-size: 50px;
@@ -165,5 +166,13 @@ body {
     }
     .current-info .others .weather-forecast-item {
         font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .future-forecast {
+        justify-content: start;
+        align-items: none;
+        overflow-x: scroll;
     }
 }
