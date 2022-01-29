@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-    padding: 20px 60px;
+    padding: 20px 70px;
     color: #fff;
 }
 
@@ -35,7 +35,7 @@ body {
 
 .date-container #am-pm {
     font-size: 30px;
-    margin-left: 5px;
+    margin-left: 20px;
 }
 
 .date-container .date {
@@ -66,7 +66,7 @@ body {
     border: 1px solid #eee;
 }
 
-.current-info .others .weather-items {
+.current-info .others .weather-item {
     display: flex;
     justify-content: space-between;
 }
@@ -77,10 +77,11 @@ body {
     position: fixed;
     bottom: 0;
     display: flex;
-    color: #fff;
+    color: white;
     width: 100%;
     align-items: center;
     justify-content: center;
+    overflow-y: hidden;
 }
 
 .future-forecast .today {
@@ -88,9 +89,11 @@ body {
     align-items: center;
     justify-content: center;
     border: 1px solid #eee;
-    border-radius: 15px;
-    padding: 10px;
-    margin-right: 20px;
+    border-radius: 10px;
+    padding: 15px;
+    padding-right: 40px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.2)
 }
 
 .future-forecast .today .day {
@@ -101,7 +104,7 @@ body {
 }
 
 .future-forecast .today .temp {
-    font-size: 14px;
+    font-size: 18px;
     padding-top: 15px;
 }
 
@@ -116,21 +119,21 @@ body {
     justify-content: center;
     margin: 0 10px;
     border: 1px solid #eee;
-    border-radius: 10px;
     padding: 15px;
-    transition: 0.5s;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.2)
 }
 
 .weather-forecast .weather-forecast-item .day {
     padding: 5px 15px;
-    background: #3c3c44;
+    background: #3C3C44;
     border-radius: 50px;
     text-align: center;
 }
 
 .weather-forecast .weather-forecast-item .temp {
     font-weight: 100;
-    font-size: 13px;
+    font-size: 12px;
 }
 
 @media only screen and (max-width:730px) {
@@ -140,7 +143,7 @@ body {
     .future-forecast {
         justify-content: start;
         align-items: none;
-        overflow-x: scroll;
+        overflow-y: scroll;
     }
     .future-forecast .today .temp {
         font-size: 16px;
@@ -164,12 +167,12 @@ body {
     .current-info .others {
         padding: 12px;
     }
-    .current-info .others .weather-forecast-item {
+    .current-info .others .weather-item {
         font-size: 14px;
     }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1400px) {
     .future-forecast {
         justify-content: start;
         align-items: none;
